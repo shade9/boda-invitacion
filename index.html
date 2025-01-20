@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .video-section {
+            position: relative;
+            height: 50vh;
+            overflow: hidden;
+        }
+
+        .video-section video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
+
+        .info-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-section p {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #f7f7f7;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #007BFF;
+        }
+
+        .cta {
+            margin-top: 2rem;
+        }
+
+        .cta a {
+            text-decoration: none;
+            color: #fff;
+            background: #007BFF;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+        }
+
+        .cta a:hover {
+            background: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#vestimenta">Vestimenta</a>
+        <a href="#itinerario">Itinerario</a>
+        <a href="#mesa-regalos">Mesa de Regalos</a>
+        <a href="#confirmacion">Confirmación</a>
+    </div>
+
+    <div class="video-section">
+        <video autoplay muted loop>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="section info-section">
+        <h1>¡Estamos a punto de casarnos!</h1>
+        <p><strong>Fecha:</strong> 25 de Mayo de 2025</p>
+        <p><strong>Hora:</strong> 6:00 PM</p>
+        <p><strong>Ubicación:</strong> Hacienda San Ángel, Ciudad de México</p>
+        <p><strong>Tipo de evento:</strong> Etiqueta formal</p>
+        <p><strong>Novios:</strong> Ana & Luis</p>
+        <div class="cta">
+            <a href="#confirmacion">Confirma tu asistencia</a>
+        </div>
+    </div>
+
+    <div id="ubicacion" class="section">
+        <h2>Ubicación</h2>
+        <p>Hacienda San Ángel, Ciudad de México</p>
+        <iframe src="https://www.google.com/maps/embed?..." width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div id="vestimenta" class="section">
+        <h2>Vestimenta</h2>
+        <p>Etiqueta formal. ¡Vístete para impresionar!</p>
+    </div>
+
+    <div id="itinerario" class="section">
+        <h2>Itinerario</h2>
+        <ul>
+            <li>6:00 PM - Ceremonia</li>
+            <li>7:30 PM - Recepción</li>
+            <li>9:00 PM - Cena</li>
+            <li>10:30 PM - Baile</li>
+        </ul>
+    </div>
+
+    <div id="mesa-regalos" class="section">
+        <h2>Mesa de Regalos</h2>
+        <p>Accede a nuestra mesa de regalos haciendo <a href="https://nuestra-mesa-de-regalos.com">clic aquí</a>.</p>
+    </div>
+
+    <div id="confirmacion" class="section">
+        <h2>Confirma tu Asistencia</h2>
+        <p>Envíanos un mensaje directo por WhatsApp para confirmar tu asistencia:</p>
+        <a href="https://wa.me/1234567890" target="_blank">Confirmar por WhatsApp</a>
+    </div>
+</body>
+</html>
